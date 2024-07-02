@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="flex items-center justify-center min-h-screen bg-gray-100">
-        <div class="w-full max-w-md p-8 bg-white rounded shadow-md">
+        <div class="bg-white max-w-xl p-6 p-8 shadow-md">
             <div class="mb-4 text-sm text-gray-600">
                 Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.
             </div>

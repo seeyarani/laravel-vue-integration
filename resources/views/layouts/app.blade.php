@@ -30,9 +30,11 @@
 
             @yield('content')
 
-            {{-- <main>
-                {{ $slot }}
-            </main> --}}
+            @auth('web')
+                <main>
+                    {{ $slot }}
+                </main>
+            @endauth
         </div>
     </body>
 </html>
