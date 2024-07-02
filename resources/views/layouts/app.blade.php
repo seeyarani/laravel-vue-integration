@@ -16,7 +16,6 @@
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
-            <!-- Page Heading -->
     
             @auth('web')
                 @include('layouts.navigation')
@@ -31,10 +30,9 @@
 
             @yield('content')
 
-            <!-- Page Content -->
-            <main>
+            {{-- <main>
                 {{ $slot }}
-            </main>
+            </main> --}}
         </div>
     </body>
 </html>
