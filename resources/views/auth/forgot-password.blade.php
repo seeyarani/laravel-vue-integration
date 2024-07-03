@@ -21,7 +21,9 @@
                 <div>
                     <label for="email"></label>
                     <input id="email" class="block mt-1 w-full" type="email" name="email" value="" required autofocus />
-                    <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                    @error('email')
+                        <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
+                    @enderror
                 </div>
 
                 <div class="flex items-center justify-end mt-4">
