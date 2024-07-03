@@ -9,8 +9,7 @@
                 <!-- Name -->
                 <div>
                     <label for="name">Name</label>
-                    <input id="name" class="block mt-1 w-full" type="text" name="name" value=""
-                        required autofocus />
+                    <input id="name" class="block mt-1 w-full" type="text" name="name" value="{{ old('name') }}" required autofocus />
                     @error('name')
                         <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
                     @enderror
@@ -19,8 +18,7 @@
                 <!-- Email Address -->
                 <div class="mt-4">
                     <label for="email">Email</label>
-                    <input id="email" class="block mt-1 w-full" type="email" name="email" value=""
-                        required autocomplete="username" />
+                    <input id="email" class="block mt-1 w-full" type="email" name="email" value="{{ old('email') }}" required/>
                     @error('email')
                         <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
                     @enderror
@@ -29,9 +27,7 @@
                 <!-- Password -->
                 <div class="mt-4">
                     <label for="password">Password</label>
-
-                    <input id="password" class="block mt-1 w-full" type="password" name="password" required
-                        autocomplete="new-password" />
+                    <input id="password" class="block mt-1 w-full" type="password" name="password" required value="{{ old('password') }}"/>
 
                     @error('password')
                         <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
@@ -42,8 +38,8 @@
                 <div class="mt-4">
                     <label for="password_confirmation">Confirm Password</label>
 
-                    <input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation"
-                        required autocomplete="new-password" />
+                    <input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" value =""
+                        required />
 
                     @error('password_confirmation')
                         <div class="mt-2 text-sm text-red-600">{{ $message }}</div>
